@@ -42,7 +42,6 @@ public class SkunkApp {
 			{
 				StdOut.print("\n" + "You got skunked: " + dice.getTypeofSkunk() + "\n");
 				StdOut.print("\n" + dice.toString() + "\n");
-				totalTurnScore=0;
 				
 				break;
 			}
@@ -62,7 +61,7 @@ public class SkunkApp {
 		//print each roll summary		
 		StdOut.print("Each dice roll score is: " + map + "\n");	
 		StdOut.print("\n" + "Your total turn score is: "  + totalTurnScore + "\n");
-		//how many chips lost and remaining
+		//how many chips lost
 	}
 }
 
