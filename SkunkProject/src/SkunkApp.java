@@ -35,6 +35,10 @@ public class SkunkApp {
 				controller.nextPlayer();
 				StdOut.println(controller.getRoundScoreBoard());
 			}
+			if (controller.getState() == "EndGameRound" && controller.activePlayerTriggeredEndgame())
+			{
+				controller.nextPlayer();
+			}
 			if (controller.getState() == "ActiveTurn" || controller.getState() == "EndGameRound")
 			{
 				StdOut.println("\n#####################################");
@@ -48,7 +52,7 @@ public class SkunkApp {
 					StdOut.println(controller.getActivePlayerName() +" decided to roll");
 					controller.roll();
 					StdOut.println(controller.getRollResult());
-					StdOut.println(controller.getActivePlayerName() + "'s Turn Score: " + controller.getActivePlayerTurnScore());
+					StdOut.println(controller.getActivePlayerName() + "'s Turn Score: " + controller.getActivePlayerTurnScore() + "\n");
 				}
 				else
 				{
