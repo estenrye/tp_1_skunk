@@ -6,7 +6,7 @@ public class SkunkApp {
 	public static void main(String[] args) {
 		// Initialize Players for the Game.
 		// Current Controller State: InitializeGame
-
+		
 		Scanner stdIn = new Scanner(System.in);
 
 		Controller controller = new Controller();
